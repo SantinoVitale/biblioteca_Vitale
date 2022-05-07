@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/Book-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="shortcut icon" href="./img/Book-icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Biblioteca Pipo</title>
+</head>
+
+<body>
+    <header class="header">
+        <!--<div class="home_tittle">
+            <img src="../img/IMG_20220402_184004__01.jpg" alt="Imagen del Titulo" width="125">
+        </div>-->
+        <nav class="home_nav">
+            <a href="../home.html" class="home_logo">Biblioteca Pipo</a>
+            <ul>
+                <li><a href="../libros.html" class="home_nav-link">Libros</a></li>
+                <li><a href="../autores.html" class="home_nav-link">Autores</a></li>
+                <li><a href="../editoriales.html" class="home_nav-link">Editoriales</a></li>
+                <li><a href="../socios.html" class="home_nav-link">Socios</a></li>
+                <li><a href="../prestamos.html" class="home_nav-link">Préstamos</a></li>
+                <li><a href="../../index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-logout" width="44" height="44" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                            <path d="M7 12h14l-3 -3m0 6l3 -3" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="image-body">
+        <div class="form_style-main">
+            <div class="form_style-tittle">
+                Ingresar los siguientes datos para devolver un libro
+            </div>
+            <div class="form_style">
+
+                <form action="">
+                    <label for="Libro_prestado">Libros prestados: </label>
+                    <div class="form_style-input">
+                    <input list="libro_prestado" name="Libro_prestado" placeholder="Libro prestado 1">
+                    <datalist id="libro_prestado">
+                        <option value="Libro prestado 1">
+                        <option value="Libro prestado 2">
+                        <option value="Libro prestado 3">
+                        <option value="Libro prestado 4">
+                        <option value="Libro prestado 5">
+
+                    </datalist>
+                    </div>
+                    <a class="form_button" href="devolver_libro_info.html">Mirar Libro</a>
+                </form>
+            </div>
+        </div>
+
+        <div class="consulta_style">
+            Info del libro prestado
+        </div>
+        <div class="consulta_style-orden">
+        <div class="consulta_style-fieldset">
+            <div class="consulta_style-padding">
+                <ul>
+                    <li>Título del libro</li>
+                    <li>Autor</li>
+                    <li>Editorial</li>
+                    <li>Estado del libro</li>
+                </ul>
+            </div>
+            <div>
+                <a class="form_button" href="#">Confirmar devolucion</a>
+                <a class="form_button" href="#">Generar multa</a>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        Todos los derechos reservados a PipoCorp
+    </footer>
+</body>
+
+</html>
