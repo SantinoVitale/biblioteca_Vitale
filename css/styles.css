@@ -224,7 +224,7 @@ body {
 
 .form_button:hover {
     background: #fff;
-    color: black !important;
+    color: rgb(127, 152, 172) !important;
 }
 
 /*-----------------Seccion Consulta universal-----------------*/
