@@ -61,6 +61,7 @@ body {
         text-decoration: none;
         color: $TextoPrincipal;
         padding-left: 10px;
+        text-transform: uppercase;
 
     }
 
@@ -138,14 +139,20 @@ body {
     padding: 1rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 320px);
-    grid-template-rows: repeat(2, 450px);
+    @include grids(4, 320px, 2, 450px);
     gap: 1rem;
 
     img {
         object-fit: cover;
         height: 100%;
         border-radius: 10px;
+    }
+}
+
+@each $libro, $link in $map-libros {
+    .#{$libro}{
+        background-image: url($link);
+        background-size: cover;
     }
 }
 
@@ -184,7 +191,7 @@ body {
             color: #e3e0e0;
         }
 
-        input {
+        .form-style-input-button {
             border-color: transparent;
             text-align: center;
             background-color: transparent;
@@ -232,7 +239,6 @@ body {
     border-style: solid;
     border-color: #fff;
     transition: all 700ms;
-
 }
 
 .form_button:hover {
@@ -240,6 +246,10 @@ body {
     color: rgb(127, 152, 172) !important;
 }
 
+.form_button-login{
+    @extend .form_button;
+    text-transform: uppercase;
+}
 /*-----------------Seccion Consulta universal-----------------*/
 
 .consulta_style-search {
@@ -274,8 +284,7 @@ body {
 
 .consulta_style-orden {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(12 1fr);
+    @include grids(3, 1fr, 12, 1fr);
     grid-row-gap: 25px;
     grid-column-gap: 25px;
 
@@ -294,12 +303,11 @@ body {
 }
 
 /*-----------------Seccion MediaQuerie-----------------*/
-@media (max-width: 1440px) {
+@media (max-width: $desktop) {
 
     .consulta_style-orden {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(12 1fr);
+        @include grids(2, 1fr, 12, 1fr);
         grid-row-gap: 25px;
         grid-column-gap: 25px;
     }
@@ -310,13 +318,12 @@ body {
         padding: 1rem;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(3, 320px);
-        grid-template-rows: repeat(4, 450px);
+        @include grids(3, 320px, 4, 450px);
         gap: 1rem;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $laptop) {
     .home_nav li {
         display: flex;
         font-size: 15px;
@@ -336,15 +343,15 @@ body {
         text-decoration: none;
         color: aliceblue;
         padding-left: 10px;
+        text-transform: uppercase;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
 
     .consulta_style-orden {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(12 1fr);
+        @include grids(1, 1fr, 12, 1fr);
         grid-row-gap: 25px;
         grid-column-gap: 25px;
     }
@@ -358,6 +365,7 @@ body {
         line-height: 80px;
         text-decoration: none;
         color: aliceblue;
+        text-transform: uppercase;
     }
 
     header {
@@ -381,8 +389,7 @@ body {
         padding: 1rem;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(2, 320px);
-        grid-template-rows: repeat(4, 450px);
+        @include grids(2, 320px, 4, 450px);
         gap: 1rem;
     }
 
@@ -411,12 +418,11 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: $celular) {
 
     .consulta_style-orden {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(12 1fr);
+        @include grids(1, 1fr, 12, 1fr);
         grid-row-gap: 25px;
         grid-column-gap: 25px;
 
@@ -463,6 +469,7 @@ body {
             line-height: 80px;
             text-decoration: none;
             color: aliceblue;
+            text-transform: uppercase;
         }
     }
     
@@ -491,8 +498,7 @@ body {
         padding: 1rem;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(1, 320px);
-        grid-template-rows: repeat(5, 450px);
+        @include grids(1, 320px, 5, 450px);
         gap: 1rem;
     }
 

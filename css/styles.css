@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /*---Colores---*/
+/*---Media---*/
+/*---Map---*/
+/*---Mixins---*/
 /*-----------------header, footer y body-----------------*/
 .logo {
   display: flex;
@@ -51,7 +54,8 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: #f0f8ff;
-    padding-left: 10px; }
+    padding-left: 10px;
+    text-transform: uppercase; }
   .home_nav li {
     display: flex;
     font-size: 20px;
@@ -112,6 +116,38 @@ body {
     height: 100%;
     border-radius: 10px; }
 
+.libro1 {
+  background-image: url("https://api.lorem.space/image/book?w=320&h=450&hash=8B7BCDC2");
+  background-size: cover; }
+
+.libro2 {
+  background-image: url("https://api.lorem.space/image/book?w=320&h=450&hash=A89D0DE6");
+  background-size: cover; }
+
+.libro3 {
+  background-image: url("https://api.lorem.space/image/book?w=320&h=450&hash=225E6693");
+  background-size: cover; }
+
+.libro4 {
+  background-image: url("https://api.lorem.space/image/book?w=320&h=450&hash=9D9539E7");
+  background-size: cover; }
+
+.libro5 {
+  background-image: url("https://api.lorem.space/image/book?w=320&h=450&hash=BDC01094");
+  background-size: cover; }
+
+.libro6 {
+  background-image: url("https://api.lorem.space/image/book?w=320&h=450&hash=7F5AE56A");
+  background-size: cover; }
+
+.libro7 {
+  background-image: url("https://api.lorem.space/image/book?w=320&h=450&hash=4F32C4CF");
+  background-size: cover; }
+
+.libro8 {
+  background-image: url("https://api.lorem.space/image/book?w=150&h=220&hash=2D297A22");
+  background-size: cover; }
+
 /*-----------------Estilo de formulario Universal-----------------*/
 .form_style-main {
   padding: 20px;
@@ -140,7 +176,7 @@ body {
       padding-top: 18px;
       margin-bottom: 5px;
       color: #e3e0e0; }
-    .form_style-main .form_style input {
+    .form_style-main .form_style .form-style-input-button {
       border-color: transparent;
       text-align: center;
       background-color: transparent;
@@ -160,7 +196,7 @@ body {
     border-bottom: 2px solid #292929; }
 
 /*-----------------Estilo botón universal-----------------*/
-.form_button {
+.form_button, .form_button-login {
   display: flex;
   margin-top: 20px;
   margin-left: auto;
@@ -180,9 +216,12 @@ body {
   border-color: #fff;
   transition: all 700ms; }
 
-.form_button:hover {
+.form_button:hover, .form_button-login:hover {
   background-color: #fff;
   color: #7f98ac !important; }
+
+.form_button-login {
+  text-transform: uppercase; }
 
 /*-----------------Seccion Consulta universal-----------------*/
 .consulta_style-search {
@@ -213,7 +252,7 @@ body {
 .consulta_style-orden {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(12 1fr);
+  grid-template-rows: repeat(12, 1fr);
   grid-row-gap: 25px;
   grid-column-gap: 25px; }
   .consulta_style-orden .consulta_style-fieldset {
@@ -233,7 +272,7 @@ body {
   .consulta_style-orden {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(12 1fr);
+    grid-template-rows: repeat(12, 1fr);
     grid-row-gap: 25px;
     grid-column-gap: 25px; }
   .home_galery-books {
@@ -263,13 +302,14 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: aliceblue;
-    padding-left: 10px; } }
+    padding-left: 10px;
+    text-transform: uppercase; } }
 
 @media (max-width: 768px) {
   .consulta_style-orden {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(12 1fr);
+    grid-template-rows: repeat(12, 1fr);
     grid-row-gap: 25px;
     grid-column-gap: 25px; }
   .home_logo {
@@ -280,7 +320,8 @@ body {
     padding: 0 20px;
     line-height: 80px;
     text-decoration: none;
-    color: aliceblue; }
+    color: aliceblue;
+    text-transform: uppercase; }
   header {
     background-color: #543b32;
     height: max-content;
@@ -320,7 +361,7 @@ body {
   .consulta_style-orden {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(12 1fr);
+    grid-template-rows: repeat(12, 1fr);
     grid-row-gap: 25px;
     grid-column-gap: 25px; }
     .consulta_style-orden .consulta_style-fieldset {
@@ -358,7 +399,8 @@ body {
       padding: 0 20px;
       line-height: 80px;
       text-decoration: none;
-      color: aliceblue; }
+      color: aliceblue;
+      text-transform: uppercase; }
   header {
     background-color: #543b32;
     height: fit-content;
