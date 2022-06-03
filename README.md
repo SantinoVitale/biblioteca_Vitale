@@ -6,20 +6,20 @@ Es una biblioteca administrativa donde se pueden agregar libros, autores, socios
 
 Autores: Santino Vitale
 
-Herramientas usadas:
--HTML5
--CSS3
--SASS
+Herramientas usadas:<br>
+-HTML5<br>
+-CSS3<br>
+-SASS<br>
 -Bootstrap v5.2
 
-Herramientas a usar en un futuro:
--PHP
+Herramientas a usar en un futuro:<br>
+-PHP<br>
 -MySQL
 
-Changelog Actualización SASS II Final:
--Se aplicó la metodologia SEO
--Se aplicó SASS al proyecto
-  -Mixins
-  -Extend
-  -Map
-  -Scripts como el watch-css y build-css
+Changelog Actualización SASS II Final:<br>
+-Se aplicó la metodologia SEO<br>
+-Se aplicó SASS al proyecto:<br>
+    -Mixins
+    -Extend
+    -Map<br>
+    -Scripts como el watch-css y build-css
