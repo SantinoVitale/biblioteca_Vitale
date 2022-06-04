@@ -1,0 +1,31 @@
+/*---Colores---*/
+
+$TextoPrincipal: #f0f8ff;
+$FondoCaja: #7f98ac99;
+
+/*---Media---*/
+
+$celular: 480px;
+$tablet: 768px;
+$laptop:1024px;
+$desktop:1440px;
+
+/*---Map---*/
+
+$map-libros:(
+    libro1: "https://api.lorem.space/image/book?w=320&h=450&hash=8B7BCDC2",
+    libro2: "https://api.lorem.space/image/book?w=320&h=450&hash=A89D0DE6",
+    libro3: "https://api.lorem.space/image/book?w=320&h=450&hash=225E6693",
+    libro4: "https://api.lorem.space/image/book?w=320&h=450&hash=9D9539E7",
+    libro5: "https://api.lorem.space/image/book?w=320&h=450&hash=BDC01094",
+    libro6: "https://api.lorem.space/image/book?w=320&h=450&hash=7F5AE56A",
+    libro7: "https://api.lorem.space/image/book?w=320&h=450&hash=4F32C4CF",
+    libro8: "https://api.lorem.space/image/book?w=150&h=220&hash=2D297A22"
+);
+
+/*---Mixins---*/
+
+@mixin grids ($cant1, $columns, $cant2, $row){
+    grid-template-columns: repeat($cant1, $columns);
+    grid-template-rows: repeat($cant2, $row);
+}
