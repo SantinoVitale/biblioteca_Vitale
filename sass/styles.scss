@@ -43,7 +43,7 @@ body {
     background-attachment: fixed;
 }
 
-/*-----------------Seccion NAV-----------------*/
+/*-----------------Sección NAV-----------------*/
 
 .home_nav {
     display: grid;
@@ -250,7 +250,7 @@ body {
     @extend .form_button;
     text-transform: uppercase;
 }
-/*-----------------Seccion Consulta universal-----------------*/
+/*-----------------Sección Consulta universal-----------------*/
 
 .consulta_style-search {
     display: flex;
@@ -302,7 +302,7 @@ body {
     }
 }
 
-/*-----------------Seccion MediaQuerie-----------------*/
+/*-----------------Sección MediaQuerie-----------------*/
 @media (max-width: $desktop) {
 
     .consulta_style-orden {
