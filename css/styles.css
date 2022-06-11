@@ -21,16 +21,65 @@ header {
   top: 0;
   left: 0; }
 
+main {
+  margin-bottom: 25px; }
+
 footer {
+  width: 100%;
+  padding: 20px 0px;
+  background-color: #543b32;
+  margin-top: auto; }
+
+.container__footer {
   display: flex;
-  justify-content: flex-end;
-  padding-right: 10px;
-  color: #f0f8ff; }
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1350px;
+  margin: auto; }
+  .container__footer .box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px; }
+    .container__footer .box__footer .terms {
+      max-width: 350px;
+      margin-top: 20px;
+      font-weight: 500;
+      color: #7a7a7a;
+      font-size: 18px; }
+    .container__footer .box__footer h2 {
+      margin-bottom: 30px;
+      color: #f0f8ff;
+      font-weight: 700;
+      text-align: center; }
+    .container__footer .box__footer a {
+      margin-top: 10px;
+      color: #7a7a7a;
+      font-weight: 600;
+      text-decoration: none; }
+
+.box__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px; }
+  .box__copyright p {
+    margin-top: 20px;
+    color: #7a7a7a; }
+  .box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a; }
+
+.box__footer a:hover {
+  opacity: 0.8; }
 
 body {
   font-family: roboto, Arial, sans-serif;
   background: linear-gradient(to right, #d7ccc8, #f5f5f5);
-  margin: 0; }
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
 
 .image-body {
   background-image: url(../img/PipoLogo.jpg);
@@ -39,7 +88,7 @@ body {
   background-position: center;
   background-attachment: fixed; }
 
-/*-----------------Seccion NAV-----------------*/
+/*-----------------Sección NAV-----------------*/
 .home_nav {
   display: grid;
   justify-content: space-between;
@@ -59,6 +108,7 @@ body {
   .home_nav li {
     display: flex;
     font-size: 20px;
+    font-size: 700;
     justify-content: flex-end;
     align-items: center;
     margin: 0px 10px;
@@ -223,7 +273,7 @@ body {
 .form_button-login {
   text-transform: uppercase; }
 
-/*-----------------Seccion Consulta universal-----------------*/
+/*-----------------Sección Consulta universal-----------------*/
 .consulta_style-search {
   display: flex;
   justify-content: center;
@@ -233,14 +283,19 @@ body {
     height: 50px;
     background: #7a5446;
     border-style: solid;
-    border-color: #7a5446;
-    padding-left: 45px;
+    border-color: #5f4136;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 5px;
     transition: all 700ms; }
   .consulta_style-search input:hover {
     background: #d7ccc8;
-    border-color: #3c2a24;
-    color: #fff !important; }
+    border-color: #3c2a24; }
+  .consulta_style-search ::placeholder {
+    color: #e3e0e0;
+    text-align: center; }
+  .consulta_style-search :hover::placeholder {
+    color: #292929; }
 
 .consulta_style {
   color: aliceblue;
@@ -252,7 +307,7 @@ body {
 .consulta_style-orden {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 25px;
   grid-column-gap: 25px; }
   .consulta_style-orden .consulta_style-fieldset {
@@ -267,12 +322,29 @@ body {
     border-color: #586a78;
     padding: 15px; }
 
-/*-----------------Seccion MediaQuerie-----------------*/
+.consulta_style_fieldset-libro {
+  display: grid;
+  grid-template-columns: 150px 300px;
+  justify-content: stretch;
+  grid-row-gap: 50px;
+  grid-column-gap: 20px;
+  border-style: solid;
+  border-radius: 15px;
+  background-color: rgba(127, 152, 172, 0.6);
+  border-color: #586a78;
+  padding: 15px;
+  width: fit-content; }
+
+.consulta_style_fieldset-centrado {
+  display: flex;
+  justify-content: center; }
+
+/*-----------------Sección MediaQuerie-----------------*/
 @media (max-width: 1440px) {
   .consulta_style-orden {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 25px;
     grid-column-gap: 25px; }
   .home_galery-books {
@@ -309,7 +381,7 @@ body {
   .consulta_style-orden {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-row-gap: 25px;
     grid-column-gap: 25px; }
   .home_logo {
@@ -355,19 +427,23 @@ body {
   .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
   .navbar-light .navbar-toggler {
-    border: 1px solid white !important; } }
+    border: 1px solid white !important; }
+  .container__footer {
+    justify-content: center; }
+    .container__footer .box__footer {
+      padding: 72px; } }
 
 @media (max-width: 480px) {
   .consulta_style-orden {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-row-gap: 25px;
     grid-column-gap: 25px; }
     .consulta_style-orden .consulta_style-fieldset {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      margin: 0px 20px;
+      margin: 0;
       justify-content: stretch;
       grid-row-gap: 50px;
       grid-column-gap: 20px;
@@ -396,7 +472,7 @@ body {
       display: flex;
       justify-content: center;
       font-weight: bold;
-      padding: 0 20px;
+      padding: 0 15px;
       line-height: 80px;
       text-decoration: none;
       color: aliceblue;
@@ -431,4 +507,10 @@ body {
     border: 1px solid white !important; }
   .form_style-main {
     height: min-content;
-    width: min-content; } }
+    width: min-content; }
+  .container__footer {
+    justify-content: center;
+    align-items: center; }
+    .container__footer .box__footer {
+      text-align: center;
+      padding: 16px; } }
