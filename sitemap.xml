@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://santinovitale.github.io/biblioteca_Vitale/pages/home.html</loc>
+  <lastmod>2023-11-29T01:48:08+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://santinovitale.github.io/biblioteca_Vitale/pages/Libros/altas_libros.html</loc>
+  <lastmod>2023-11-29T01:48:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://santinovitale.github.io/biblioteca_Vitale/pages/Libros/consultas_libros.html</loc>
+  <lastmod>2023-11-29T01:48:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://santinovitale.github.io/biblioteca_Vitale/pages/Autor/altas_autor.html</loc>
+  <lastmod>2023-11-29T01:48:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://santinovitale.github.io/biblioteca_Vitale/pages/Autor/consultas_autores.html</loc>
+  <lastmod>2023-11-29T01:48:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://santinovitale.github.io/biblioteca_Vitale/pages/Editoriales/altas_editoriales.html</loc>
+  <lastmod>2023-11-29T01:48:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://santinovitale.github.io/biblioteca_Vitale/pages/Editoriales/consultas_editoriales.html</loc>
+  <lastmod>2023-11-29T01:48:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://santinovitale.github.io/biblioteca_Vitale/pages/Socio/altas_socios.html</loc>
+  <lastmod>2023-11-29T01:48:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://santinovitale.github.io/biblioteca_Vitale/pages/Socio/consultas_socios.html</loc>
+  <lastmod>2023-11-29T01:48:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://santinovitale.github.io/biblioteca_Vitale/pages/Prestamos/prestar_libro.html</loc>
+  <lastmod>2023-11-29T01:48:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://santinovitale.github.io/biblioteca_Vitale/pages/Prestamos/devolver_libro.html</loc>
+  <lastmod>2023-11-29T01:48:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://santinovitale.github.io/biblioteca_Vitale/pages/Prestamos/consultas_prestamo.html</loc>
+  <lastmod>2023-11-29T01:48:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://santinovitale.github.io/biblioteca_Vitale/pages/Prestamos/devolver_libro_info.html</loc>
+  <lastmod>2023-11-29T01:48:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
